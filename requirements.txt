@@ -1,0 +1,5 @@
+flask
+yt-dlp
+moviepy
+Pillow
+openai>=1.0.0
