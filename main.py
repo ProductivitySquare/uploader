@@ -9,7 +9,7 @@ from openai import OpenAI
 app = Flask(__name__)
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=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)
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 # ---------------------------------------------
