@@ -118,11 +118,11 @@ def extract_route():
 
         return jsonify({"success": True, "recipe": recipe})
 
-except Exception as e:
-    import traceback
-    traceback.print_exc()   # ⭐ ΤΥΠΩΝΕΙ ΤΟ ERROR ΣΤΟ DEPLOY LOGS
-    print("🔥 FULL ERROR:", e)
-    return jsonify({"error": str(e)}), 500
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        print("🔥 FULL ERROR:", e)
+        return jsonify({"error": str(e)}), 500
 
 
 
